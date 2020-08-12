@@ -1,0 +1,1 @@
+body{background-size:cover;background:url(large-background-min.jpg) no-repeat center center fixed}h1{color:red}@media screen and (max-width:768px){body{background:grey;background-size:cover}}@media screen and (max-width:500px){body{background:#ff0;background-size:cover}}
