@@ -1,0 +1,94 @@
+
+<!--
+HTML
+  #1 Load <style> in <head>
+  #2 Load <script> right before /body
+CSS
+  #3 Load only what is needed
+  #4 Above the fold loading
+  #5 Media attributes
+  #6 Less specificity
+JS
+  #7 Load scripts asynchronously
+  #8 Defer loading of scripts
+  #9 Minimize DOM manipulation
+  #10 Avoid long running Javascript
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Critical Render Path</title>
+  
+
+  <!-- #1 load style in head
+    media attribute is similar to css media query
+  -->
+  <link rel="stylesheet" href="./style.css" media="all">
+
+  <!-- #5 load sheet only if screen width is less than 500px -->
+  <link rel="stylesheet" href="./style2.css" media="only screen and (min-width:500px)">
+  
+  
+</head>
+<body>
+  <h1>How Fast?</h1>
+  <button>Click Me</button>
+  <img src="https://5.imimg.com/data5/GR/PD/MY-4659120/img-20161230-wa0170-500x500.jpg">
+
+  <!-- 4. Above the fold loading -->
+  <h2 class="important">Important above the fold content</h2>
+
+  <h2 class="secondary">Below the fold.  Won't see until after page load</h2>
+
+  <script type='text/javascript'>
+    const loadStylesheet = src => {
+      // if using ie createStyleSheet method is available
+      if(document.createStyleSheet) {
+        // add stylesheet to dom based on input sheet
+        document.createStyleSheet(src)
+      } 
+      // else create a new link element and append attributes
+      else {
+        const stylesheet = document.createElement('link');
+        stylesheet.href = src;
+        stylesheet.type = 'text/css';
+        stylesheet.rel = 'stylesheet';
+        //Append the new link to the head of the dom
+        document.getElementsByTagName('head')[0].appendChild(stylesheet)
+      }
+    }
+    //load styles 3 on page load
+    window.onload = function() {
+      console.log('window done!');
+      loadStylesheet("./style3.css")
+    }
+  </script>
+
+  <!-- Render blocking and Parser blocking JS -->
+  <!-- script loaded and executed before dom is constructed, loaded and painted -->
+  <script>
+    var redButton = document.querySelector("button");
+    redButton.style.color = "red";
+  </script>
+  
+  <!-- #8 defer will load script after everything else has loaded -->
+  <script src="./script.js" defer></script>
+  <!-- async will load script in the background and render it immediately on completion
+  This can cause temporary blocking when it finishes -->
+  <script src="./script2.js" async></script>
+  <script src="./script3.js"></script>
+  
+  <!-- #10 avoid long running js 
+    Can't do anything else on the page while script is running.
+    Poor user experience
+  -->
+  <script>
+    const button = document.querySelector("button");
+    button.addEventListener("click", function () {
+      alert("Stop Clicking Me!");
+    });
+  </script>
+  
+</body>
+</html>

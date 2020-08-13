@@ -1,0 +1,15 @@
+h1 {
+  color: red;
+}
+
+
+/* bad - too much specificity -
+must navigate many levels of the dom to access.  slower */
+.header .nav .item .link a.important {
+  color: pink;
+}
+
+/* good */
+a.important {
+  color: pink;
+}
