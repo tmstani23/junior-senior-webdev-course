@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/robo/static/css/main.693259d3.chunk.css",
-    "main.js": "/robo/static/js/main.2058dd44.chunk.js",
-    "main.js.map": "/robo/static/js/main.2058dd44.chunk.js.map",
-    "runtime-main.js": "/robo/static/js/runtime-main.a78c4623.js",
-    "runtime-main.js.map": "/robo/static/js/runtime-main.a78c4623.js.map",
-    "static/css/2.3c03f26f.chunk.css": "/robo/static/css/2.3c03f26f.chunk.css",
-    "static/js/2.16258756.chunk.js": "/robo/static/js/2.16258756.chunk.js",
-    "static/js/2.16258756.chunk.js.map": "/robo/static/js/2.16258756.chunk.js.map",
-    "index.html": "/robo/index.html",
-    "precache-manifest.ae8908c97428bb5d39ef3de01ba16fde.js": "/robo/precache-manifest.ae8908c97428bb5d39ef3de01ba16fde.js",
-    "service-worker.js": "/robo/service-worker.js",
-    "static/css/2.3c03f26f.chunk.css.map": "/robo/static/css/2.3c03f26f.chunk.css.map",
-    "static/css/main.693259d3.chunk.css.map": "/robo/static/css/main.693259d3.chunk.css.map",
-    "static/js/2.16258756.chunk.js.LICENSE.txt": "/robo/static/js/2.16258756.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/robo/static/media/SEGA.82e09f78.TTF"
+    "main.css": "/junior-senior-webdev-course/react_redux_project/robo/static/css/main.5ece815f.chunk.css",
+    "main.js": "/junior-senior-webdev-course/react_redux_project/robo/static/js/main.2058dd44.chunk.js",
+    "main.js.map": "/junior-senior-webdev-course/react_redux_project/robo/static/js/main.2058dd44.chunk.js.map",
+    "runtime-main.js": "/junior-senior-webdev-course/react_redux_project/robo/static/js/runtime-main.599bdcec.js",
+    "runtime-main.js.map": "/junior-senior-webdev-course/react_redux_project/robo/static/js/runtime-main.599bdcec.js.map",
+    "static/css/2.3c03f26f.chunk.css": "/junior-senior-webdev-course/react_redux_project/robo/static/css/2.3c03f26f.chunk.css",
+    "static/js/2.16258756.chunk.js": "/junior-senior-webdev-course/react_redux_project/robo/static/js/2.16258756.chunk.js",
+    "static/js/2.16258756.chunk.js.map": "/junior-senior-webdev-course/react_redux_project/robo/static/js/2.16258756.chunk.js.map",
+    "index.html": "/junior-senior-webdev-course/react_redux_project/robo/index.html",
+    "precache-manifest.ba429bb1ab2257c2505e24dba87baf27.js": "/junior-senior-webdev-course/react_redux_project/robo/precache-manifest.ba429bb1ab2257c2505e24dba87baf27.js",
+    "service-worker.js": "/junior-senior-webdev-course/react_redux_project/robo/service-worker.js",
+    "static/css/2.3c03f26f.chunk.css.map": "/junior-senior-webdev-course/react_redux_project/robo/static/css/2.3c03f26f.chunk.css.map",
+    "static/css/main.5ece815f.chunk.css.map": "/junior-senior-webdev-course/react_redux_project/robo/static/css/main.5ece815f.chunk.css.map",
+    "static/js/2.16258756.chunk.js.LICENSE.txt": "/junior-senior-webdev-course/react_redux_project/robo/static/js/2.16258756.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/junior-senior-webdev-course/react_redux_project/robo/static/media/SEGA.82e09f78.TTF"
   },
   "entrypoints": [
-    "static/js/runtime-main.a78c4623.js",
+    "static/js/runtime-main.599bdcec.js",
     "static/css/2.3c03f26f.chunk.css",
     "static/js/2.16258756.chunk.js",
-    "static/css/main.693259d3.chunk.css",
+    "static/css/main.5ece815f.chunk.css",
     "static/js/main.2058dd44.chunk.js"
   ]
 }
