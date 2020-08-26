@@ -1,0 +1,13 @@
+{
+    "parser": "babel-eslint",
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "rules": {
+        "no-console": "warn",
+        "linebreak-style": 0,
+        "no-trailing-spaces": [2, { "skipBlankLines": true }]
+    }
+    
+}
