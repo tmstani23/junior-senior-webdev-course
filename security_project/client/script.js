@@ -1,3 +1,5 @@
+
+
 // try inputting this: <script>alert('hi')</script>
 // Now, try inputting this: <img src="/" onerror = "alert(1);">
 // Scripts injected into the DOM via script tags in innerHTML
@@ -18,7 +20,7 @@ const userInputInHTML = (input) => {
 const sendToServer = () => {
   const input = document.querySelector('#userinput').value;
   userInputInHTML(input)
-  fetch('http://localhost:3000/secret', {
+  fetch('http://localhost:3001/secret', {
     method: 'POST',
     body: JSON.stringify({userInput: input}),
     headers: new Headers({
