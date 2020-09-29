@@ -1,0 +1,63 @@
+// Access redis cli once server is running
+// Must be in src folder
+./redis-cli
+
+//Key value storage
+// set Key
+SET name "Godzilla"
+//Get Value
+GET name
+//Delete
+DEL name
+//Check if exists
+EXISTS name
+// Del key after a timeout
+SET name "session"
+EXPIRE session 5
+
+//Increment/decr a number key
+SET counter 1000
+INCRBY counter 500
+DECRBY counter 500
+// set multiple keys
+MSET a 2 b 5
+// get mult values
+MGET a b
+
+//SET hash mult datatype key
+HMSET user id 45 name "Rukus"
+//get hash id/name
+HGET user id
+HGET user name
+//Get entire hash
+HGETALL user
+
+// lists
+// Collection of keys
+// Add values to a list at beginning
+LPUSH newList 10
+// Add values to a list at end
+RPUSH newList "hello"
+// Get list values using index range
+LRANGE newList 0 1
+// Remove end value from list
+RPOP newList
+// Remove start value from list
+LPOP newList
+
+// Sets
+// Unique collections of elements
+// Add numbers to set
+SADD ourset 1 2 3 4 5
+// Get set members
+SMEMBERS ourset
+//Check if element exists in set
+SISMEMBER ourset 5
+
+// Sorted Sets
+// Create sorted set where 50 is the rank
+ZADD team 50 "Wizords"
+// Get by index range 
+ZRANGE team 0 1
+// Get index of set element based on order rank
+ZRANK team "Wizords"
