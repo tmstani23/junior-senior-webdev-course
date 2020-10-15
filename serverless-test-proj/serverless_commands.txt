@@ -1,0 +1,10 @@
+sls config credentials --provider aws --key  *insertKey* --secret *insertKeyString 
+
+#deploy the build
+sls deploy
+
+#invoke function locally
+sls invoke local --function *functionName*
+
+#invoke function in the cloud
+sls invoke --function *functionName*
