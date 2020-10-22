@@ -15,7 +15,7 @@ services:
   load-balancer:
     build: nginx/
     ports:
-      - 80:80
+      - 3001:80
     links:
       - web1
       - web2

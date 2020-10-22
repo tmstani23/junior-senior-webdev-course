@@ -1,2 +1,2 @@
 FROM nginx 
-COPY nginx.conf /usr/src/nginx/nginx.conf
+COPY nginx.conf /etc/nginx/nginx.conf
