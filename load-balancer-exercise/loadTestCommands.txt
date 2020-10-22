@@ -1,0 +1,2 @@
+#run basic load test on endpoint
+loadtest -t  5 -c 100 --rps 100 http://localhost:3001
